@@ -1,0 +1,270 @@
+*{
+    margin: 10px;
+    padding: 0;
+}
+.links a{
+    text-decoration: none;
+    color:#E1DCDB;
+}
+.links a:hover{
+    color: white;
+}
+.logo{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:x-large;
+    text-align: center;
+}
+menu{
+    list-style: none;
+    display: flex;
+    padding: 5px;
+    align-items: flex-start;
+    margin-right: 100px;
+}
+
+li{
+    margin: 20px;
+    font-size: large;
+    font-family:  Arial, Helvetica, sans-serif;
+    display: inline;
+}
+body{
+    height: 100vh;
+}
+.links{
+    justify-content: right;
+}
+.navbar .toggle-button{
+    color: grey;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+.navbar{
+    position: relative;
+    background-color: black;
+}
+.name{
+    font-size:xx-large;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-top: 0;
+}
+.img-section{
+    height: 150px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    margin-left: 0;
+    margin-bottom: 100px;
+    padding-bottom: 0;
+}
+.name-section{
+    margin-top: 0;
+}
+
+.about-me{
+    display: flex;
+    margin: auto;
+    width: 75%;
+}
+.about-me-text{
+    border: black;
+    border-width: 2px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    margin-left: 20px;
+}
+.about-me-text p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    text-align: justify;
+}
+.photo{
+    margin-right: 100px;
+    margin-left: 100px;
+    height: 230px;
+    width: 200px;
+    padding: 20px;
+    border-color: black;
+    border-width: 5px;
+}
+
+.figcaption{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: larger;
+    font-weight:bold;
+}
+.figure{
+    display: block;
+    width: fit-content;
+    font-size: 15px;
+}
+.project-section{
+    display: block;
+    width: 60%;
+    margin: auto;
+}
+
+.project1{
+    height: 500px;
+}
+.project2{
+    height: 550px;
+}
+.figure2{
+    margin-bottom: 20px;
+}
+
+details > summary.ps1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    padding: 4px;
+    width: 200px;
+    background-color: #ee9797d5;
+    border: none;
+    box-shadow: 1px 1px 2px #bbbbbb;
+    cursor: pointer;
+  }
+  
+.psp1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    background-color: #ee9797d5;
+    padding: 10px;
+    margin: 0;
+    box-shadow: 1px 1px 2px #bbbbbb;
+  }
+  details > summary.ps2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    padding: 4px;
+    width: 200px;
+    background-color: #61a0ff81;
+    border: none;
+    box-shadow: 1px 1px 2px #bbbbbb;
+    cursor: pointer;
+  }
+  
+.psp2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    background-color: #61a0ff81;
+    padding: 10px;
+    margin: 0;
+    box-shadow: 1px 1px 2px #bbbbbb;
+    margin-bottom: 40px;
+  }
+.freespace{
+    height: 100px;
+    margin-top: 100px;
+}
+.table-section{
+    width: 75%;
+    margin: auto;
+}
+table{
+    width: 50%;
+    margin: auto;
+    border:2px solid rgb(87, 86, 86);
+    border-spacing: 0
+}
+th, td {
+    border:2px solid rgb(87, 86, 86);
+    border-spacing: 0;
+    padding: 20px;
+    justify-content: center;
+  }
+tr.tabletext, td a{
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    text-decoration: none;
+}
+.contact-ref{
+    text-decoration: none;
+}
+tr{
+    margin: 20px;
+}
+.skills-section{
+    font-family: sans-serif;
+    padding: auto;
+    width: 60%;
+    margin: auto;
+    word-spacing: 5px;
+    letter-spacing: 1px;
+    line-height: 30px;
+    font-size: larger;
+}
+
+.contact-section{
+    display: inline;
+    width: 60%;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+footer{
+    background-color: grey;
+}
+.video{
+    width: 100%;
+}
+@media  screen and (min-width:280px) and (max-width:1279px) {
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .navbar{
+        background-color: black;
+        margin: 0;
+        padding: 0;
+        height: 80px;
+    }
+    .name-logo{
+        position: absolute;
+        margin: 0;
+        width: 121px;
+        height: 102px;
+        float: right;
+    }
+    .links{
+        display: none;
+    }
+}
+
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+    background-color: rgb(51, 140, 255);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Add a background color and some padding around the form */
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
