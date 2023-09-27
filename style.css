@@ -18,8 +18,6 @@ menu{
     list-style: none;
     display: flex;
     padding: 5px;
-    align-items: flex-start;
-    margin-right: 100px;
 }
 
 li{
@@ -67,29 +65,35 @@ body{
 .about-me{
     display: flex;
     margin: auto;
-    width: 75%;
+    width: 100%;
 }
 .about-me-text{
-    border: black;
-    border-width: 2px;
     display: flex;
     flex-wrap: wrap;
     padding: 10px;
-    margin-left: 20px;
+    margin-top: 20px;
+    height: fit-content;
 }
 .about-me-text p{
-    font-family: Arial, Helvetica, sans-serif;
+    border: black;
+    border-width: 3px;
+    border-radius: 10px;
+    border-style: solid;
+    font-family: sans-serif;
     font-size: large;
     text-align: justify;
+    padding: 20px;
 }
 .photo{
-    margin-right: 100px;
     margin-left: 100px;
-    height: 230px;
-    width: 200px;
+    width: fit-content;
     padding: 20px;
     border-color: black;
     border-width: 5px;
+}
+
+.myphoto{
+    height: auto;
 }
 
 .figcaption{
@@ -99,24 +103,29 @@ body{
     font-weight:bold;
 }
 .figure{
-    display: block;
-    width: fit-content;
+    margin: auto;
     font-size: 15px;
 }
 .project-section{
     display: block;
-    width: 60%;
+    width: 50%;
     margin: auto;
 }
 
 .project1{
-    height: 500px;
+    margin: auto;
+    height: 100%;
 }
 .project2{
-    height: 550px;
+    margin: auto;
+    height: 100%;
 }
 .figure2{
     margin-bottom: 20px;
+}
+
+.project-img{
+    width:100%;
 }
 
 details > summary.ps1{
@@ -207,13 +216,36 @@ tr{
     margin: auto;
     font-family: Arial, Helvetica, sans-serif;
 }
-footer{
-    background-color: grey;
+.Certifications{
+    display: flex;
+    width: 100%;
+    margin: auto;
 }
 .video{
     width: 100%;
+    height: 400px;
 }
-@media  screen and (min-width:280px) and (max-width:1279px) {
+.ML_img{
+    height: 300px;
+    width: 400px;
+}
+.GCP_img{
+    height: 300px;
+    width: 400px;
+}
+.Django_img{
+    height: 300px;
+    width: 400px;
+}
+.social-media{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.social-media img{
+    width: 100%;
+}
+@media  screen and (max-width:414px) {
     *{
         margin: 0;
         padding: 0;
@@ -223,6 +255,7 @@ footer{
         margin: 0;
         padding: 0;
         height: 80px;
+        width: 100%
     }
     .name-logo{
         position: absolute;
@@ -231,23 +264,185 @@ footer{
         height: 102px;
         float: right;
     }
-    .links{
-        display: none;
+    menu{
+        list-style: none;
+        display: inline;
+        padding: 5px;
+    }
+    .img-section{
+        margin-bottom: 0;
+    }
+    .Certifications{
+        display: block;
+        width: 100%;
+        margin: auto;
+    }
+    .social-media{
+        margin-top: 20px;
+        justify-content:center;
     }
 }
 
+@media  screen and (min-width:768px) and (max-width:1069px){
+    .img-section{
+        margin-bottom: 20px;
+    }
+    .about-me{
+        display: inline;
+        margin: auto;
+        width: fit-content;
+    }
+    .about-me-text{
+        display: flex;
+        flex-wrap: wrap;
+        height: fit-content;
+    }
+    .about-me-text p{
+        border: black;
+        border-width: 3px;
+        border-radius: 10px;
+        border-style: solid;
+        font-family: sans-serif;
+        font-size: large;
+        text-align: justify;
+    }
+    .photo{
+        display: block;
+        width: fit-content;
+        margin: auto;
+    }
+    
+    .myphoto{
+        margin: auto;
+        width: 100%;
+    }
+    
+    .figcaption{
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        font-size: larger;
+        font-weight:bold;
+    }
+    .figure{
+        display: block;
+        width: fit-content;
+        margin: auto;
+        font-size: 15px;
+        justify-content: center;
+    }
+    .audio{
+        padding-top: 20px;
+        display: block;
+        width: 100%;
+        margin: auto;
+    }
+    .Certifications{
+        display: block;
+        width: 100%;
+        margin: auto;
+    }
+}
+
+@media  screen and (max-width:768px) {
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .navbar{
+        background-color: black;
+        margin: 0;
+        padding: 0;
+        height: 80px;
+        width: 100%
+    }
+    .name-logo{
+        position: absolute;
+        margin: 0;
+        width: 121px;
+        height: 102px;
+        float: right;
+    }
+
+    .about-me{
+        display: inline;
+        margin: auto;
+        width: fit-content;
+    }
+    .about-me-text{
+        display: flex;
+        flex-wrap: wrap;
+        height: fit-content;
+    }
+    .about-me-text p{
+        border: black;
+        border-width: 3px;
+        border-radius: 10px;
+        border-style: solid;
+        font-family: sans-serif;
+        font-size: large;
+        text-align: justify;
+    }
+    .photo{
+        display: block;
+        width: fit-content;
+        margin: auto;
+    }
+    
+    .myphoto{
+        margin: auto;
+        width: 100%;
+    }
+    
+    .figcaption{
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        font-size: larger;
+        font-weight:bold;
+    }
+    .figure{
+        display: block;
+        width: fit-content;
+        margin: auto;
+        font-size: 15px;
+        justify-content: center;
+    }
+    .audio{
+        padding-top: 20px;
+        display: block;
+        width: 100%;
+        margin: auto;
+    }
+    summary.ps1, summary.ps2{
+        margin-bottom: 20px;
+    }
+    .psp1, .psp2{
+        margin-bottom: 20px;
+    }
+    .Certifications{
+        display: block;
+        width: 100%;
+        margin: auto;
+    }
+    .social-media{
+        margin-top: 20px;
+    }
+    .container{
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+}
 input[type=text], select, textarea {
-    width: 100%; /* Full width */
-    padding: 12px; /* Some padding */ 
-    border: 1px solid #ccc; /* Gray border */
-    border-radius: 4px; /* Rounded borders */
-    box-sizing: border-box; /* Make sure that padding and width stays in place */
-    margin-top: 6px; /* Add a top margin */
-    margin-bottom: 16px; /* Bottom margin */
-    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+    width: 100%; 
+    padding: 12px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical 
   }
   
-  /* Style the submit button with a specific background color etc */
+ 
   input[type=submit] {
     background-color: rgb(51, 140, 255);
     color: white;
@@ -257,14 +452,22 @@ input[type=text], select, textarea {
     cursor: pointer;
   }
   
-  /* When moving the mouse over the submit button, add a darker green color */
+  
   input[type=submit]:hover {
     background-color: #45a049;
   }
   
-  /* Add a background color and some padding around the form */
+  
   .container {
+    display: flex;
+    justify-content: center;
+    width: 50%;
     border-radius: 5px;
     background-color: #f2f2f2;
     padding: 20px;
+    margin-left: 22.5%;
   }
+
+.trial{
+    height: 100px;
+}
